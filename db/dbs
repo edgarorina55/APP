@@ -1,0 +1,49 @@
+DBs for backend development
+
+1.know how to design tables
+    .primary keys
+        .foreign keys
+            .relationships
+                .data types 
+                    .indexes
+
+2.connecting to databases 
+    .node.js + mysql
+        .python + fastAPI + mysql
+
+3.performing CRUD operations
+    .create - insert
+        .read - select 
+            .update - update 
+                .delete - delete 
+
+4.building API endpoints that use the database 
+    .heart
+     API endpoint > backend logic > database > response 
+
+5. handling authentication 
+    .hashing passwords 
+        .storing users 
+            .generating tokens
+                .protecting routes 
+
+6.structuring the backend project 
+    .foldering 
+
+
+workflow:
+.design the database 
+    .tables, relationships, constraints 
+.create the database in mysql
+    .using SQL scripts or mysql workbench
+.connecting the backend to mysql
+    .using mysql2 (node) or SQLAlchemy(python)
+.build CRUD endpoints 
+    ./users, /products, /orders 
+.add authentication
+    .login, register, JWT tokens 
+.testing everything with Postman or Thunder Client
+    .making sure the API works before building the frontend
+.deploy 
+    .backend - render, railway, or VPS 
+    .database - planetScale, Neon, or local mysql server 
