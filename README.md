@@ -35,7 +35,7 @@ Tools                           PowerShell, VS Code, GitHub Codespaces
 
 📦 Installation & Setup
 Clone the repository:
-    git clone https://github.com/edgarorina55/apps.git
+    git clone https://github.com/edgarorina55/APP.git
     cd apps
 
 Install dependencies for any app:
