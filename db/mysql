@@ -1,0 +1,11 @@
+MySQL 
+
+.Creating DB
+    create database statement 
+.Deleting an existing database 
+    drop database 
+.Creating a new table in a database
+    create table 
+        .column parameters specify the names of the table columns 
+        .datatype parameter specifies the type of data the column can hold 
+    .can also be completed by making a copy of an existing table - same column definitions & values from the original table 
