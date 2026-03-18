@@ -30,7 +30,21 @@ MySQL
                 .UNIQUE - ensures that all values in a column are different 
                     .can be many unique constraints in a table 
                 .PRIMARY KEY - combination of NOT NULL and UNIQUE; uniquely identifies each row in a table 
+                    .must contain unique values
+                    .cannot contain NULL values 
+                    .can only be one in a table 
+                    .can be on single or multiple columns 
+                    .exists in the parent/ reference table 
                 .FOREIGN KEY - prevents actions that would destroy links between tables 
+                    .field or collection of fields in one table that refers to the PRIMARY KEY in another table 
+                    .exists in the child table
                 .CHECK  - ensures that the values in a column satisfies a specific condition
-                .DEFAULT - sets a default value for a column if no value is specified 
+                .DEFAULT - sets a default value for a column if no value is specified value is specified 
+                    .default value is added to all new records if no other 
                 .CREATE INDEX - used to create and retrieve data from the database very quickly 
+                    .creates indexes 
+                .AUTO_INCREMENT - allows a unique number to be generated automatically when a new record is inserted into a table 
+                .VIEW - virtual table based on the result-set of an SQL statement 
+                    .contains rows and columns
+                    .the fields in a view are fields from one or more real tables in the database 
+                    .created with the create view statement 
