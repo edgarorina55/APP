@@ -9,3 +9,28 @@ MySQL
         .column parameters specify the names of the table columns 
         .datatype parameter specifies the type of data the column can hold 
     .can also be completed by making a copy of an existing table - same column definitions & values from the original table 
+.Drop/deleting an existing table from a database 
+    .Truncate table - delete data inside a table 
+.Altering a table 
+    .changes the structure of a table 
+        .adding, deleting, or modifying columns in an existing table 
+        .adding or dropping various constraints on an existing table 
+            .add/drop Primary key
+    .cannot insert data values 
+
+.Constraints
+    .specify the rules for data in a table 
+    .specified when the table is created or after (using alter table statement)
+    .limit the type of data going into a table 
+        .ensuring accuracy and reliability of the data in the table 
+    .can be at table or column level 
+  .common ones: .NOT NULL - ensures that a column cannot have a NULL value
+                    .always contain a value
+                    .cannot insert a new record, or update a record without adding a value 
+                .UNIQUE - ensures that all values in a column are different 
+                    .can be many unique constraints in a table 
+                .PRIMARY KEY - combination of NOT NULL and UNIQUE; uniquely identifies each row in a table 
+                .FOREIGN KEY - prevents actions that would destroy links between tables 
+                .CHECK  - ensures that the values in a column satisfies a specific condition
+                .DEFAULT - sets a default value for a column if no value is specified 
+                .CREATE INDEX - used to create and retrieve data from the database very quickly 
