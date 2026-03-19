@@ -3,3 +3,38 @@ Pandas - Panel Data// Python Data Analysis
 .python library for working with data sets
     .analyzing, cleaning, exploring, and manipulating data 
 .allows analysis of big data and making conclusions based on statistical theories 
+
+Pandas Series 
+.just like a table column
+.1-D array holding data of any type 
+
+.if nothing is specified, the values are labeled with their index number
+    .can be used to access a specified value 
+    .when using key:value pairs, the keys become the labels 
+
+DataFrames 
+.are multi-dimensional data tables 
+.2-D array holding both columns and rows 
+
+.use the loc attribute to return one or more specified rows
+.with the index argument, I can name my own indexes 
+    .use the named index in the loc attribute to return the specified row(s)
+
+    pd.read_csv - loads data in csv file into a dataframe 
+    
+    df.info:    - range index - shows # of entries 
+                - # of data columns 
+                    .names of each column, with the data type 
+
+
+Cleaning data 
+.fixing bad data in a data set 
+    .bad data - empty cells 
+                .data in wrong format
+                .wrong data
+                .duplicates 
+
+    
+    .dropna() - returns new dataframe, and does not change the original dataframe 
+        .use the inplace = True argument to change the original dataframe 
+        
