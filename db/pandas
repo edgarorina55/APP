@@ -137,3 +137,32 @@ importance:
 
 
 >Data Manipulation
+.involves data wrangling 
+    .cleaning and modifying a data set to make it an efficient input for a data analysis model 
+.involves operations like:
+
+    .appending 
+        .creating a new series object (new row) and adding it to the dataframe 
+
+>groupby() method
+.splits a dataframe into groups based on one or more columns, allowing for efficient data analysis and aggregation
+    .follows a 'split-apply-combine' strategy - data is divided into groups, a function applied to each group, and the results 
+    combined into a new dataframe 
+        .split - dividing the data into groups based on some criteria; groups defined by unique values in one or more columns
+        .apply - apply the function to each group independently
+            .applying various functions to each group: 
+                .aggregation - calculate summary statistics for each group e.g mean, sum, count
+                .transformation - modify the results within each group 
+                .filtering - keep or discard groups based on certain conditions 
+        .combining - results of the applied function are combined into a new dataframe/series 
+
+
+Transformation
+.transformation functions return an object that is indexed the same as the original group 
+    .useful for when applying operations that maintain the original structure of the data e.g normalization
+.apply group-specific operations while maintaining the original shape of the dataset 
+.unlike aggregation which reduces data, transformations allow group-specific modifications without altering the shape of the data 
+
+.Filtration
+.allows me to drop the entire groups from a groupby() object based on a condition
+.helps in cleaning data by removing groups that do not meet specific criteria, thus focusing only on relevant subsets 
