@@ -38,3 +38,14 @@ Cleaning data
     .dropna() - returns new dataframe, and does not change the original dataframe 
         .use the inplace = True argument to change the original dataframe 
         
+
+>> working with missing data 
+.represented as 
+    .none
+    .NaN 
+
+    1. using isnull()
+    .finding missing values:
+        .returns a dataframe of Boolean value where True represents missing data (NaN)
+
+
