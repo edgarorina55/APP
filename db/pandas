@@ -48,4 +48,32 @@ Cleaning data
     .finding missing values:
         .returns a dataframe of Boolean value where True represents missing data (NaN)
 
+    2. using isna()
+    .finding missing values:
+        .returns a dataframe of Boolean value where True represents missing data (NaN)
 
+    3.checking for non-missing values using notnull()
+    .focusing only on the rows with valid, non-missing values 
+        .function returns a dataframe with Boolean values where True indicates non-missing (valid) data 
+    
+    4. using fillna()
+    .replacing missing values with a specified value or use interpolation methods to find the missing data 
+        .replaces the NaN values with a given value
+
+.info() - tells of how many non-null values are in a column
+
+>> dropping duplicates
+    .drop_duplicates()
+        .removes duplicate rows from a dataframe based on all columns or specific ones 
+            .retains the first occurrence of each row and removes any duplicates that follow 
+        .give (keep='last') argument to retain the last occurrence 
+        .give (keep=False) argument to remove all rows that are duplicates 
+    
+    .use inplace=True to modify the dataframe in place without creating a new one 
+
+
+>> Changing the data type
+.correct data type is crucial for accurate computations and analyses 
+
+    .astype()
+        .allows conversion of specific columns to desired data types 
