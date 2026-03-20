@@ -56,7 +56,10 @@ Cleaning data
     .focusing only on the rows with valid, non-missing values 
         .function returns a dataframe with Boolean values where True indicates non-missing (valid) data 
     
-    4. using fillna()
+    4. finding the number of missing values in the data set
+        > df.isnull().sum() 
+
+    5. using fillna()
     .replacing missing values with a specified value or use interpolation methods to find the missing data 
         .replaces the NaN values with a given value
 
@@ -77,3 +80,60 @@ Cleaning data
 
     .astype()
         .allows conversion of specific columns to desired data types 
+
+
+    
+>Data processing
+.its manipulating, transforming, and analyzing data using Python
+.contains series of operations changing raw data into structured data/ meaningful insights
+.Pandas is a python library that facilitates efficient data processing; built on NumPy
+    >processes:
+        .loading the data into dataframes
+        .printing/displaying the data 
+        .summarizing the dataframe 
+        .descriptive statistical measures of a dataframe 
+        .handling missing data 
+        .row & column manipulations 
+            .removing rows - df.drop(index)
+            .renaming rows - df.rename({key:'value'})
+            .adding new columns - df['New Column'] = values to the column 
+        .merging dataframes 
+            .used for all standard join ops 
+            .databases joined based on their common column values 
+        .apply function
+            .iterates over a dataframe 
+            .also used with lambda functions 
+
+
+>Data Normalization
+.its scaling numeric features to a standard range, preventing large values from dominating the learning process 
+in machine learning 
+.ensures that numerical features (in ML and data analysis) are on a similar scale for optimal model performance 
+importance:
+    .avoids numerical instability in models
+    .speeds up convergence in gradient-based algorithms
+    .ensures all features contribute equally to the analysis 
+
+    >steps
+        .import the required libraries 
+        .load or create a dataset 
+        .apply different normalization techniques 
+        .visualize the results 
+
+    .Normalization techniques 
+    1. Maximum absolute scaling 
+    .rescales each feature between -1 and 1 by dividing all values by the maximum absolute value in that column 
+    .useful when the data doesn't contain negative numbers, and the need to preserve the data's sparcity
+
+    2. min-max feature scaling
+    .also called normalization
+    .rescales the feature to a hard and fast range of [0,1] by subtracting the min value of the feature then dividing by the range 
+
+    3.z-score method
+    .often called standardization
+    .changes the values in each column so that they have a mean of 0 and a standard deviation of 1
+    .best when the data follows a normal distribution or when I want to treat values in terms of how far they are from the average
+
+
+
+>Data Manipulation
